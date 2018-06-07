@@ -1,3 +1,3 @@
 // import $ from 'jquery';
 import 'bootstrap';
-import './styles.scss';
+import './styles/styles.scss';
