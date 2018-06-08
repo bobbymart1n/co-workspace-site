@@ -6,8 +6,6 @@
   height: 100%;
   .header-content {
     height: 100%;
-    max-width: 1080px;
-    margin: auto;
     @include two-column-grid;
     justify-content: center;
     align-content: center;

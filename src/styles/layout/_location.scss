@@ -1,0 +1,24 @@
+.location-inner {
+  @include two-column-grid;
+  .location-info {
+    h1 {
+      font-size: 4em;
+    }
+    .location-address {
+      display: flex;
+      align-items: center;
+      .map-icon {
+        margin-right: 20px;
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+  .location-map {
+    background: url('../images/map.png') {
+      size: cover;
+      position: 50%;
+    }
+  }
+}
