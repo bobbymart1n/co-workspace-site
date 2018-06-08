@@ -14,9 +14,10 @@ body {
 
 ul {
   padding: 0;
+  list-style: none;
 }
 
-.container, .header-content, .amenities-inner, .testimonials-inner {
+.container, .header-content, .amenities-inner, .testimonials-inner, .footer-container {
   max-width: 1080px;
   margin: auto;
   height: 100%;
