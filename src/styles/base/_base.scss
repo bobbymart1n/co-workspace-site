@@ -28,3 +28,8 @@ a {
 .container {
   margin: 80px auto;
 }
+@include media-query(415px) {
+  .container, .header-content, .amenities-inner, .testimonials-inner, .footer-container {
+    padding: 0 .9em;
+  }
+}

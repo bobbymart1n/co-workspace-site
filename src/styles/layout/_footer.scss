@@ -47,6 +47,7 @@ footer {
     }
   }
   @include media-query(415px) {
+    width: 100%;
     .footer-container {
       justify-content: initial;
       flex-direction: column;

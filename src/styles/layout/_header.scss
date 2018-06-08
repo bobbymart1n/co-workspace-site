@@ -68,4 +68,13 @@
       }
     }
   }
+  @include media-query(415px) {
+    background-size: 220%;
+    .header-content {
+      grid-template-columns: 1fr;
+      .slide {
+        display: none;
+      }
+    }
+  }
 }
