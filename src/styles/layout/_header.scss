@@ -4,6 +4,9 @@
     position: 50% 50%;
   }
   height: 100%;
+  .mobile-brand {
+    display: none;
+  }
   .header-content {
     @include two-column-grid;
     justify-content: center;
@@ -72,6 +75,12 @@
     background-size: 220%;
     .header-content {
       grid-template-columns: 1fr;
+      .mobile-brand {
+        display: block;
+        font-size: 4em;
+        color: $Light;
+        text-align: center;
+      }
       .slide {
         display: none;
       }

@@ -51,6 +51,11 @@
     .location-inner {
       display: flex;
       flex-direction: column;
+      .location-info {
+        h1 {
+          font-size: 3em;
+        }
+      }
       .location-map {
         display: none;
       }

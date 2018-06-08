@@ -39,6 +39,8 @@
     }
   }
   @include media-query(415px) {
+    height: auto;
+    margin-bottom: 20px;
     .testimonials-inner {
       h1 {
         font-size: 3em;

@@ -49,8 +49,39 @@ footer {
   @include media-query(415px) {
     width: 100%;
     .footer-container {
-      justify-content: initial;
+      justify-content: space-around;
       flex-direction: column;
+      .footer-left {
+        display: flex;
+        flex-flow: row wrap;
+        h1 {
+          flex: 100% 1 0;
+          font-size: 3em;
+          text-align: center;
+        }
+        .footer-nav {
+          flex: 1;
+          ul {
+            flex-flow: row wrap;
+            li {
+              margin: 10px 20px;
+              &:nth-child(3),&:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+      .footer-right {
+        ul {
+          margin: 0 auto;
+          li {
+            &:last-child {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }

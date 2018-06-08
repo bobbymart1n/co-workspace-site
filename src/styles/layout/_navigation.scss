@@ -7,6 +7,9 @@ nav {
   position: fixed;
   width: 100%;
   color: $Light;
+  .mobile-nav {
+    display: none;
+  }
   .brand {
     h1 {
       font-size: 2.2em;
@@ -29,6 +32,19 @@ nav {
           color: inherit;
         }
       }
+    }
+  }
+  @include media-query(415px) {
+    .mobile-nav {
+      display: flex;
+      width: 20px;
+      img {
+        width: 100%;
+        color: $Light;
+      }
+    }
+    .nav-links, .brand {
+      display: none;
     }
   }
 }
