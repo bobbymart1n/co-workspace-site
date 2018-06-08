@@ -1,0 +1,9 @@
+.testimonials {
+  height: 100%;
+  .testimonials-inner {
+    padding-top: $SectionTopPadding;
+    h1 {
+      @include big-heading;
+    }
+  }
+}

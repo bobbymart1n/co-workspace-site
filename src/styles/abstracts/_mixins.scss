@@ -9,6 +9,10 @@
   grid-template-rows: repeat(2, 300px);
   grid-gap: 30px;
 }
+@mixin big-heading {
+  font-size: 6em;
+  text-align: center;
+}
 @mixin media-query($arg) {
   @media screen and (max-width: $arg) {
     @content;

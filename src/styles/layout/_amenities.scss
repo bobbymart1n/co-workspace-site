@@ -5,10 +5,9 @@
     position: 50%;
   };
   .amenities-inner {
-    padding-top: 60px;
+    padding-top: $SectionTopPadding;
     h1 {
-      text-align: center;
-      font-size: 6em;
+      @include big-heading;
       color: $LightGreen;
       margin: 20px 0;
     }
