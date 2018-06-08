@@ -1,0 +1,32 @@
+.amenities {
+  height: 100%;
+  background: url('../images/amenities-bg.png') {
+    size: cover;
+    position: 50%;
+  };
+  .amenities-inner {
+    padding-top: 60px;
+    h1 {
+      text-align: center;
+      font-size: 6em;
+      color: $LightGreen;
+      margin: 20px 0;
+    }
+    .tiles {
+      @include four-column-grid;
+      justify-items: center;
+      .amenities-tile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        max-width: 240px;
+        padding: 1.3rem;
+        background-color: transparentize($LightGreen, .5);
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+}
