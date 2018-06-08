@@ -48,9 +48,25 @@
       overflow: hidden;
       .slide-item {
         height: 100%;
+        position: relative;
         background: url('../images/lounge.png') {
           size: 200%;
           position: 50% 50%;
+        }
+        .overlay {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: transparentize($Dark, .5);
+          position: absolute;
+          h1 {
+            font-family: $RalewayBlack;
+            font-style: italic;
+            font-size: 3.2em;
+            color: $Light;
+          }
         }
       }
     }
