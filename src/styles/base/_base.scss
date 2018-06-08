@@ -16,6 +16,9 @@ ul {
   padding: 0;
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 
 .container, .header-content, .amenities-inner, .testimonials-inner, .footer-container {
   max-width: 1080px;
