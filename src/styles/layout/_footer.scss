@@ -1,5 +1,6 @@
 footer {
   height: 100%;
+  width: 100%;
   max-height: 270px;
   background-color: $Dark;
   display: flex;
@@ -47,7 +48,6 @@ footer {
     }
   }
   @include media-query(415px) {
-    width: 100%;
     .footer-container {
       justify-content: space-around;
       flex-direction: column;

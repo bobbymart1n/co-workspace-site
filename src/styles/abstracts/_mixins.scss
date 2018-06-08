@@ -18,3 +18,8 @@
     @content;
   }
 }
+@mixin media-query-height($arg) {
+  @media screen and (max-height: $arg) {
+    @content;
+  }
+}

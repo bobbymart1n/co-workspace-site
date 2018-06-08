@@ -28,12 +28,15 @@
       }
     }
   }
-  @include media-query(415px) {
+  @include media-query-height(860px) {
     .amenities-inner {
-      padding: 1.3em;
-      h1 {
-        font-size: 3em;
+      .tiles {
+        grid-template-rows: auto;
       }
+    }
+  }
+  @include media-query(930px) {
+    .amenities-inner {
       .tiles {
         display: flex;
         flex-direction: column;
@@ -48,10 +51,18 @@
           max-width: initial;
           padding: .3rem 2em;
           img {
-            max-width: 35px;
+            max-width: 80px;
             margin-right: 2em;
           }
         }
+      }
+    }
+  }
+  @include media-query(415px) {
+    .amenities-inner {
+      padding: 1.3em;
+      h1 {
+        font-size: 3em;
       }
     }
   }
