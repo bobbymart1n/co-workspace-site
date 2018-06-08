@@ -5,5 +5,38 @@
     h1 {
       @include big-heading;
     }
+    .testimonial-item {
+      padding: .8em;
+      background-color: transparentize($Green, .8);
+      border: 5px solid $BlueGreen;
+      position: relative;
+      z-index: 1;
+      .testimonial-text {
+        margin: 5px 0;
+      }
+      .author {
+        float: right;
+        font-family: $Rozha;
+        position: relative;
+        bottom: 10px;
+      }
+      .triangle {
+        position: absolute;
+        bottom: -25px;
+        left: -5px;
+        z-index: 0;
+        width: 0;
+        height: 0;
+        border-right: 40px solid transparent;
+        border-left: 40px solid transparent;
+        border-top: 20px solid $BlueGreen;
+      }
+      &:nth-child(odd) {
+        .triangle {
+          left: initial;
+          right: -5px;
+        }
+      }
+    }
   }
 }
