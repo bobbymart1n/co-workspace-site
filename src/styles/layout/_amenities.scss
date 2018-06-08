@@ -50,6 +50,9 @@
           width: 100%;
           max-width: initial;
           padding: .3rem 2em;
+          p {
+            font-size: 1.3em;
+          }
           img {
             max-width: 80px;
             margin-right: 2em;
@@ -63,6 +66,13 @@
       padding: 1.3em;
       h1 {
         font-size: 3em;
+      }
+      .tiles {
+        .amenities-tile {
+          img {
+            max-width: 35px;
+          }
+        }
       }
     }
   }

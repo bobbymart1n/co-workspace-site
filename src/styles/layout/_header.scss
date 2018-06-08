@@ -71,7 +71,7 @@
       }
     }
   }
-  @include media-query(415px) {
+  @include media-query(930px) {
     background-size: 220%;
     .header-content {
       grid-template-columns: 1fr;
@@ -86,4 +86,5 @@
       }
     }
   }
+
 }
