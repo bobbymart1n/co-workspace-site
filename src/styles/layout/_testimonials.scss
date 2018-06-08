@@ -38,4 +38,11 @@
       }
     }
   }
+  @include media-query(415px) {
+    .testimonials-inner {
+      h1 {
+        font-size: 3em;
+      }
+    }
+  }
 }

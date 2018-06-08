@@ -46,4 +46,10 @@ footer {
       }
     }
   }
+  @include media-query(415px) {
+    .footer-container {
+      justify-content: initial;
+      flex-direction: column;
+    }
+  }
 }
