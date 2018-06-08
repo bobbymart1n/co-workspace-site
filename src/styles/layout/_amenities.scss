@@ -51,13 +51,20 @@
           max-width: initial;
           padding: .3rem 2em;
           p {
-            font-size: 1.3em;
+            font-size: 1em;
           }
           img {
-            max-width: 80px;
+            max-width: 40px;
             margin-right: 2em;
           }
         }
+      }
+    }
+  }
+  @include media-query(485px) {
+    .amenities-inner {
+      h1 {
+        font-size: 4em;
       }
     }
   }

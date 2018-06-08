@@ -47,7 +47,7 @@ footer {
       }
     }
   }
-  @include media-query(415px) {
+  @include media-query(725px) {
     .footer-container {
       justify-content: space-around;
       flex-direction: column;

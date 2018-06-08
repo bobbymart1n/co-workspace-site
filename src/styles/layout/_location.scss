@@ -43,10 +43,9 @@
       }
     }
   }
-
-  @include media-query(415px) {
+  @include media-query(725px) {
     .location-slider {
-      max-height: 300px;
+      max-height: 500px;
     }
     .location-inner {
       display: flex;
@@ -59,6 +58,12 @@
       .location-map {
         display: none;
       }
+    }
+  }
+
+  @include media-query(415px) {
+    .location-slider {
+      max-height: 300px;
     }
   }
 }

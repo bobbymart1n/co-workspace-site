@@ -38,6 +38,13 @@
       }
     }
   }
+  @include media-query(600px) {
+    .testimonials-inner {
+      h1 {
+        font-size: 4em;
+      }
+    }
+  }
   @include media-query(415px) {
     height: auto;
     margin-bottom: 20px;
