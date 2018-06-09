@@ -9,6 +9,15 @@
   grid-template-rows: repeat(2, 300px);
   grid-gap: 30px;
 }
+@mixin overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparentize($Dark, .5);
+  position: absolute;
+}
 @mixin big-heading {
   font-size: 6em;
   text-align: center;

@@ -7,11 +7,34 @@
     height: 100%;
     max-height: 800px;
     display: flex;
+    position: relative;
     .location-slider-item {
       width: 100%;
       background: url('../images/coffee-area.png') {
         size: cover;
         position: 50%;
+      }
+    }
+    .overlay {
+      @include overlay;
+      flex-direction: column;
+      h2 {
+        position: absolute;
+        top: 100px;
+        font-size: 4em;
+        text-align: center;
+        color: $Light;
+      }
+      .arrows {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img {
+          margin: 0 20px;
+        }
+      }
+      .tap {
+        display: none;
       }
     }
   }
