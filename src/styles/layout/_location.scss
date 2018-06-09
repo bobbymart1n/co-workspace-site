@@ -69,6 +69,12 @@
   @include media-query(725px) {
     .location-slider {
       max-height: 500px;
+      .overlay {
+        h2 {
+          font-size: 3em;
+          top: 50px;
+        }
+      }
     }
     .location-inner {
       display: flex;
@@ -87,6 +93,19 @@
   @include media-query(415px) {
     .location-slider {
       max-height: 300px;
+      .overlay {
+        h2 {
+          font-size: 2em;
+        }
+        .arrows {
+          display: none;
+        }
+        .tap {
+          display: flex;
+          position: absolute;
+          bottom: 20px;
+        }
+      }
     }
   }
 }
