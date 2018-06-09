@@ -12,9 +12,5 @@ function navBarNotScrolled() {
 }
 window.addEventListener('scroll', () => {
   scrollPos = window.scrollY;
-  if(scrollPos > 10) {
-    navbarScrolled();
-  } else if (scrollPos === 0) {
-    navBarNotScrolled();
-  }
+  scrollPos > 10 ? navbarScrolled() : navBarNotScrolled();
 });
