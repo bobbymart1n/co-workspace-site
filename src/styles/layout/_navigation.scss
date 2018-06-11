@@ -61,7 +61,6 @@ nav {
       width: 20px;
       img {
         width: 100%;
-        color: $Light;
       }
     }
     &.clicked {
@@ -70,6 +69,10 @@ nav {
       align-items: flex-start;
       .mobile-nav {
         height: 100%;
+        img {
+          filter: invert(100%);
+          transition: filter .3s;
+        }
       }
       .nav-links {
         display: block;
@@ -82,6 +85,20 @@ nav {
           justify-content: space-evenly;
           li {
             margin: 0 auto;
+            opacity: 0;
+            position: relative;
+            &:nth-child(1) {
+              animation: fade-in .3s .2s forwards;
+            }
+            &:nth-child(2) {
+              animation: fade-in .3s .4s forwards;
+            }
+            &:nth-child(3) {
+              animation: fade-in .3s .6s forwards;
+            }
+            &:nth-child(4) {
+              animation: fade-in .3s .8s forwards;
+            }
             a {
               font-size: 24px;
               color: $Light;
@@ -93,5 +110,15 @@ nav {
     .nav-links, .brand {
       display: none;
     }
+  }
+}
+@keyframes fade-in {
+  from {
+    top: -20px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
   }
 }
