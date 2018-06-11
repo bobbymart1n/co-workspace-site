@@ -7,7 +7,9 @@ const navBar = document.getElementById('nav');
 const navbarScrolled = () => navBar.classList.add('scrolled');
 const navBarNotScrolled = () => navBar.classList.remove('scrolled');
 
-window.addEventListener('scroll', () => {
-  scrollPos = window.scrollY;
-  scrollPos > 10 ? navbarScrolled() : navBarNotScrolled();
-});
+window.onload = () => {
+  window.addEventListener('scroll', () => {
+    scrollPos = window.scrollY;
+    scrollPos > 10 ? navbarScrolled() : navBarNotScrolled();
+  });
+}
